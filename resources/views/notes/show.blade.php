@@ -17,6 +17,12 @@
                             Updated at: {{ $note->updated_at->diffForHumans() }}
                         </p>
                         <a href="{{ route('notes.edit', $note) }}" class="btn-link ml-auto">Edit Note</a>
+                        <form action="{{ route('notes.destroy', $note) }}" method="POST">
+                            @method('DELETE')
+                            @csrf
+                            <button type="submit" class="btn-red ml-4"
+                                onclick="return confirm('Delete this note?')">Delete Note </button>
+                        </form>
                     </div>
                     <h2 class="font-bold text-6xl"> {{ $note->title }} </h2>
                     <p class="mt-6 whitespace-pre-wrap">{{ $note->text }}</p>
