@@ -10,4 +10,9 @@ class Note extends Model
     use HasFactory;
 
     protected $guarded = []; // all of the attributes mass assignable
+
+    public function getRouteKeyName()
+    {
+        return 'uuid';
+    }
 }
