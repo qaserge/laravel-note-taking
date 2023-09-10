@@ -5,8 +5,11 @@
         </h2>
     </x-slot>
 
-    <div class="py-12">
+    <div class="py-12">        
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
+            <x-alert-success>
+                {{ session('success') }}
+            </x-alert-success>
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     <div class="flex mb-10">
@@ -23,6 +26,8 @@
                             <button type="submit" class="btn-red ml-4"
                                 onclick="return confirm('Delete this note?')">Delete Note </button>
                         </form>
+                    </div>
+                    <div class="flex mb-10">
                     </div>
                     <h2 class="font-bold text-6xl"> {{ $note->title }} </h2>
                     <p class="mt-6 whitespace-pre-wrap">{{ $note->text }}</p>
