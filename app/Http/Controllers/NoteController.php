@@ -13,7 +13,7 @@ class NoteController extends Controller
      */
     public function index()
     {
-        $notes = Note::where('user_id', Auth::id())->latest('updated_at')->get(); //latest = DESC   
+        $notes = Note::where('user_id', Auth::id())->latest('updated_at')->paginate(5); //latest = DESC   
         return view('notes.index')->with('notes', $notes);
     }
 
