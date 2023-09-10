@@ -10,6 +10,9 @@
             <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     {{-- {{ __("All Notes") }} // translate example --}}
+
+                    <a href="{{ route('notes.create') }}" class="btn-link btn-lg mb-2">+ New Note</a>
+                    
                     @forelse ($notes as $note)
                         <div class="my-6 p-6 border-b border-gray-200">
                             <h2 class="font-bold text-2xl">{{ $note->title }}</h2>
