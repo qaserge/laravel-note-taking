@@ -38,12 +38,12 @@
                                 <button type="submit" class="btn-link">Restore Note</button>
                             </form>                            
 
-                            {{-- <form action="{{ route('notes.destroy', $note) }}" method="POST">
+                            <form action="{{ route('trashed.destroy', $note) }}" method="POST">
                                 @method('DELETE')
                                 @csrf
                                 <button type="submit" class="btn-red ml-4"
-                                    onclick="return confirm('Delete this note?')">Move to Trash </button>
-                            </form> --}}
+                                    onclick="return confirm('Delete this note forever?')">Delete</button>
+                            </form>
                         @endif
                     </div>
                     <div class="flex mb-10">

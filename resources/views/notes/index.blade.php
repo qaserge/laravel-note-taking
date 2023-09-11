@@ -14,7 +14,7 @@
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     {{-- {{ __("All Notes") }} // translate example --}}
 
-                    @if (request()->routeIs('note.index'))
+                    @if (request()->routeIs('notes.index'))
                         <a href="{{ route('notes.create') }}" class="btn-link btn-lg mb-2">+ New Note</a>
                     @endif
 
@@ -34,7 +34,7 @@
                             <span class="block mt-4 text-sm opacity-70">{{ $note->updated_at->diffForHumans() }}</span>
                         </div>
                     @empty
-                        @if (request()->routeIs('note.index'))
+                        @if (request()->routeIs('notes.index'))
                             <p>You have no notes yet.</p>
                         @else
                             <p>You have no trash items.</p>
