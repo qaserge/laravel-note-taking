@@ -23,11 +23,11 @@
                         <div class="my-6 p-6 border-b border-gray-200">
                             <h2 class="font-bold text-2xl">
                                 <a
-                                    @if (request()->routeIs('notes.index')) 
-                                        href="{{ route('notes.show', $note) }}"
-                                    @else
-                                        href="{{ route('trashed.show', $note) }}" 
-                                    @endif
+                                @if(request()->routeIs('notes.index'))
+                                    href="{{ route('notes.show', $note) }}"
+                                @else
+                                    href="{{ route('trashed.show', $note) }}"
+                                @endif
                                 >{{ $note->title }}</a>
                             </h2>
                             <p class="mt-2">{{ Str::limit($note->text, 200) }}</p>
