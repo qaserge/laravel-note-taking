@@ -26,8 +26,7 @@ Soft Deletion of Models: To ensure data integrity, deleted notes are first moved
 
 Adherence to Conventions and Best Practices: During the development of the application, Laravel Best Practices and SOLID principles were followed to maintain clean and readable code.
 
-![image](https://github.com/qaserge/laravel-note-taking/assets/45569665/5f72849a-79d6-4791-bb07-94240a26315c)
-![image](https://github.com/qaserge/laravel-note-taking/assets/45569665/ca5958f3-5f7d-482f-b604-01c3b452c2f0)
-![image](https://github.com/qaserge/laravel-note-taking/assets/45569665/04b737d9-b5bd-42d8-88c5-249976f206ab)
-![image](https://github.com/qaserge/laravel-note-taking/assets/45569665/5978c1c0-ec72-4972-9264-6e12b27bcdc5)
-
+![image](https://github.com/qaserge/laravel-note-taking/assets/45569665/16dec189-3fca-47d6-a2bc-45244a32ec83)
+![image](https://github.com/qaserge/laravel-note-taking/assets/45569665/b0bf57cd-ba7a-430d-b93f-9db4a94af968)
+![image](https://github.com/qaserge/laravel-note-taking/assets/45569665/5cdc56e4-c9f6-4f9e-8daf-27f84bf13ef1)
+![image](https://github.com/qaserge/laravel-note-taking/assets/45569665/090575e4-ce68-456b-83ce-e371fe77d50a)
